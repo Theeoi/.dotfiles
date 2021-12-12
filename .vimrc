@@ -74,6 +74,9 @@ Plug 'preservim/nerdtree'
 Plug 'lervag/vimtex'
 Plug 'vim-syntastic/syntastic'
 
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'preservim/nerdcommenter'
+
 call plug#end() " Enables filetype identification and syntax
 
 """"""""""""""""""""""""
@@ -124,3 +127,10 @@ let g:syntastic_check_on_open = 1
 " NERDTree Config
 map <C-n> :NERDTreeToggle<CR>
 
+" Coc Config
+let g:coc_global_extensions = [
+    \'coc-pairs',
+    \'coc-snippets',
+    \'coc-texlab',
+    \'coc-pyright'
+    \]
