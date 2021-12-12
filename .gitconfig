@@ -3,3 +3,5 @@
 	name = Theodor Blom
 [hub]
 	protocol = https
+[credential]
+	helper = manager-core
