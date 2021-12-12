@@ -1,3 +1,5 @@
 [user]
 	email = theodor.blom1@gmail.com 
 	name = Theodor Blom
+[hub]
+	protocol = https
