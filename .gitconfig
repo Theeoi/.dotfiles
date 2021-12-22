@@ -3,8 +3,5 @@
 	name = Theodor Blom
 [hub]
 	protocol = https
-[credential]
-	helper = /usr/local/bin/git-credential-manager-core
-	credentialStore = cache
 [credential "https://dev.azure.com"]
 	useHttpPath = true
