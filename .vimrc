@@ -5,6 +5,7 @@
 set nocompatible " Makes this .vimrc system-wide
 syntax on " Enables syntax highlighting
 set nowrap " Disable textwrapping by default
+set guifont=mononoki\ Nerd\ Font\ Mono\ 12
 set encoding=utf8
 
 " Enables linenumbers and cursor position

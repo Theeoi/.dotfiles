@@ -99,7 +99,6 @@ alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
 alias np='nano -w PKGBUILD'
 alias more=less
-alias WindowsPart='cd /run/media/theodorb/Windows/Users/Theodor\ Blom'
 
 xhost +local:root > /dev/null 2>&1
 
