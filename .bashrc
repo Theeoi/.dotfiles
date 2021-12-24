@@ -114,8 +114,14 @@ shopt -s expand_aliases
 
 # export QT_SELECT=4
 
-# Enable history appending instead of overwriting.  #139609
-shopt -s histappend
+## Bash history fixes
+shopt -s histappend # Enable history appending instead of overwriting.  #139609
+HISTTIMEFORMAT="%F %T " # Adds date and time to history command
+HISTCONTROL=ignoredups # No duplicates
+
+function hg() {
+    history | grep "$1";
+}
 
 #
 # # ex - archive extractor
@@ -144,5 +150,11 @@ ex ()
 
 ## Vim as default editor
 export EDITOR=vim
+set -o vi #Vim commands in CL
+
+## Improved folder movement
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
 
 
