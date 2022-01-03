@@ -5,6 +5,7 @@
 set nocompatible " Makes this .vimrc system-wide
 syntax on " Enables syntax highlighting
 set nowrap " Disable textwrapping by default
+set textwidth=80
 set guifont=mononoki\ Nerd\ Font\ Mono\ 12
 set encoding=utf8
 
@@ -133,5 +134,8 @@ let g:coc_global_extensions = [
     \'coc-pairs',
     \'coc-snippets',
     \'coc-texlab',
-    \'coc-pyright'
+    \'coc-pyright',
+    \'coc-html',
+    \'coc-css',
+    \'coc-tsserver'
     \]
