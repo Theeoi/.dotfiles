@@ -1,5 +1,5 @@
 [user]
-	email = theodor.blom1@gmail.com 
+	email = me@theodorblom.com 
 	name = Theodor Blom
 [hub]
 	protocol = https
@@ -8,3 +8,5 @@
 [credential "https://github.com"]
 	helper = 
 	helper = !/usr/bin/gh auth git-credential
+[pull]
+	rebase = false
