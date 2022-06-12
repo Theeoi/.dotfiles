@@ -103,8 +103,12 @@ for my personal .vimrc
 - CoCList mappings for diagnostics/extensions/commands/outline/symbols
     -> <space> + a/e/c/o/s 
 
+#### Coc-snippets
+- Save visual selected code as snippet
+    -> \x
 
-
+- Paste snippet based on trigger
+    -> CTRL + j 
 
 
 
