@@ -94,6 +94,7 @@ fi
 
 unset use_color safe_term match_lhs sh
 
+alias mkdir="mkdir -p"                    # create dir recursively
 alias rm="rm -Ir"                         # remove recursively and confirm
 alias cp="cp -i"                          # confirm before overwriting something
 alias mv="mv -i"                          # confirm before overwriting something
