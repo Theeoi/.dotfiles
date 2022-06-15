@@ -42,6 +42,10 @@ nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 
+" j/k will move virtual lines (lines that wrap)
+noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
+noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
+
 " Enable Elite mode, No ARRRROWWS!!!!
 let g:elite_mode=1
 nnoremap <Up>    :resize +2<CR>
