@@ -195,7 +195,7 @@ irm()
     read VERIFY
 
     if [[ $VERIFY = "Y" || $VERIFY = "y" ]]; then
-      rm -rf "$TRASH"/*
+      \rm -rf "$TRASH"/*
       echo "Trash emptied."
     else
       echo "Ok, nothing has been deleted."
@@ -214,7 +214,7 @@ irm()
         echo "A file named $i already exists in the trashcan. Overwrite? Y/N"
         read INPUT
         if [[ $INPUT = "Y" || $INPUT = "y" ]]; then
-          rm -rf "$TRASH/$i"
+          \rm -rf "$TRASH/$i"
         else
           echo "Ok, $i was not deleted. Continuing..."
           continue
