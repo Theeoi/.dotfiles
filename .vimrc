@@ -100,11 +100,11 @@ colorscheme dracula
 " Enable wrapping on words for tex-files
 autocmd Filetype tex set wrap linebreak 
 
-" LaTeX and qpdfview
-let g:vimtex_view_general_viewer = 'qpdfview'
-let g:vimtex_view_general_options
-    \ = '--unique @pdf\#src:@tex:@line:@col'
-let g:vimtex_view_general_options_latexmk = '--unique'
+" LaTeX and pdfviewer
+let g:vimtex_view_general_viewer = 'evince'
+"let g:vimtex_view_general_options
+    "\ = '--unique @pdf\#src:@tex:@line:@col'
+"let g:vimtex_view_general_options_latexmk = '--unique'
 let g:Tex_IgnoreWarnings =
     \"Intersentence spacing (`\@') should perhaps be used.\n".
     \"Underfull\n".
