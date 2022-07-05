@@ -89,6 +89,9 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-surround' 
 Plug 'tpope/vim-fugitive'
 Plug 'preservim/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'ryanoasis/vim-devicons'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 Plug 'lervag/vimtex'
 Plug 'vim-syntastic/syntastic'
@@ -147,7 +150,12 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 
 """ NERDTree Config
-map <C-n> :NERDTreeToggle<CR>
+nnoremap <expr> <C-n> g:NERDTree.IsOpen() ? ':NERDTreeClose<CR>' : @% == '' ? ':NERDTree<CR>' : ':NERDTreeFind<CR>'
+let NERDTreeShowHidden=1
+
+let g:WebDevIconsUnicodeDecorateFolderNodes = 1
+let g:DevIconsEnableFoldersOpenClose = 1
+let g:DevIconsEnableFolderExtensionPatternMatching = 1
 
 """ Coc Config
 let g:coc_global_extensions = [
