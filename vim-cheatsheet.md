@@ -3,13 +3,13 @@
 By: Theodor Blom
 for my personal .vimrc
 
-## General Keybinds
+## General Keybindings
 
 ### Movement
 - Arrows are disabled
     -> hjkl
 
-- Jump back to previos cursor position
+- Jump back to previous cursor position
     -> \\
 
 - Navigate split views
