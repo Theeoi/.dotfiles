@@ -8,11 +8,22 @@ set nowrap " Disable textwrapping by default
 set textwidth=80
 set guifont=mononoki\ Nerd\ Font\ Mono\ 12
 set encoding=utf8
+set spell
+set title
+set list
+set listchars=tab:▸\ ,trail:·,multispace:·
+set splitright
+set confirm
 
 " Enables linenumbers and cursor position
+set relativenumber
 set number
 set cursorline
 set ruler
+
+" Enables good scrolling
+set scrolloff=8
+set sidescrolloff=8
 
 " Press \\ to jump back to the last cursor position.
 nnoremap <leader>\ ``
@@ -27,6 +38,8 @@ set expandtab
 set laststatus=2
 
 " Enables good searching
+set ignorecase
+set smartcase
 set incsearch
 set hlsearch
 nnoremap // :nohlsearch<CR>
