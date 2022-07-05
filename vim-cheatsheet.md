@@ -15,6 +15,12 @@ for my personal .vimrc
 - Navigate split views
     -> CTRL + hjkl
 
+- Delete current buffer
+    -> \D
+
+- Goto file under cursor
+    -> gf
+
 ### Modes
 - Exit insert-mode
     -> jj

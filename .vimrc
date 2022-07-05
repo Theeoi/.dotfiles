@@ -49,6 +49,16 @@ nnoremap N Nzz
 " Type jj to exit insert-mode
 inoremap jj <esc>
 
+" type \D to delete current buffer
+nmap <leader>D :bdelete<cr>
+
+" Allow gf to open non-existent files
+map gf :edit <cfile><cr>
+
+" Reselect visual selection after indenting
+vnoremap < <gv
+vnoremap > >gv
+
 " Navigate the split view easier by pressing CTRL+j, CTRL+k, CTRL+h, or CTRL+l.
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
