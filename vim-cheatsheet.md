@@ -28,6 +28,16 @@ for my personal .vimrc
 - Remove search highlighting
     -> //
 
+### Spelling
+- Suggest edit for word under cursor
+    -> z=
+
+- Add word under cursor to spellfile
+    -> zg
+
+- Remove word under cursor from spellfile
+    -> zug
+
 ## Plugins
 
 ### NERDTree
