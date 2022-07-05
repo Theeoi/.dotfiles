@@ -105,16 +105,18 @@ let g:vimtex_view_general_viewer = 'evince'
 "let g:vimtex_view_general_options
     "\ = '--unique @pdf\#src:@tex:@line:@col'
 "let g:vimtex_view_general_options_latexmk = '--unique'
-let g:Tex_IgnoreWarnings =
-    \"Intersentence spacing (`\@') should perhaps be used.\n".
-    \"Underfull\n".
-    \"Overfull\n".
-    \"specifier changed to\n".
-    \"You have requested\n".
-    \"Missing number, treated as zero.\n".
+let g:Tex_IgnoredWarnings =
+    \"Intersentence spacing (`\@') should perhaps be used\n"
+    \"Underfull"
+    \"Overfull"
+    \"specifier changed to\n"
+    \"You have requested\n"
+    \"Missing number, treated as zero\n"
     \"There were undefined references\n"
-    \"Citation %.%# undefined"
-let g:Tex_IgnoreLevel = 8
+    \"Citation %.%# undefined\n"
+    \"Delete this space to maintain correct pagereferences\n"
+    \""
+let g:Tex_IgnoreLevel = 10
 
 " Syntastic Configuration
 set statusline+=%#warningmsg#
