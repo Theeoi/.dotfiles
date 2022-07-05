@@ -59,7 +59,7 @@ nnoremap <c-l> <c-w>l
 noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
 noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
 
-" Enable Elite mode, No ARRRROWWS!!!!
+" Enable Elite mode, No arrows!!!!
 let g:elite_mode=1
 nnoremap <Up>    :resize +2<CR>
 nnoremap <Down>  :resize -2<CR>
