@@ -4,6 +4,7 @@
 
 set nocompatible " Makes this .vimrc system-wide
 syntax enable " Enables syntax highlighting
+filetype on
 set nowrap " Disable textwrapping by default
 set textwidth=80
 set guifont=mononoki\ Nerd\ Font\ Mono\ 12
@@ -105,6 +106,7 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 Plug 'lervag/vimtex'
 Plug 'vim-syntastic/syntastic'
+Plug 'preservim/tagbar'
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -158,6 +160,9 @@ let g:hybrid_reduced_contrast = 1
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
+
+" Tagbar Toggle
+nnoremap <silent> <C-m> :TagbarToggle[f]<CR>
 
 """ NERDTree Config
 nnoremap <expr> <C-n> g:NERDTree.IsOpen() ? ':NERDTreeClose<CR>' : @% == '' ? ':NERDTree<CR>' : ':NERDTreeFind<CR>'
