@@ -51,7 +51,7 @@ nnoremap N Nzz
 inoremap jj <esc>
 
 " type \D to delete current buffer
-nmap <leader>D :bdelete<cr>
+nmap <leader>D :Bwipeout<CR>
 
 " Allow gf to open non-existent files
 map gf :edit <cfile><cr>
@@ -99,10 +99,7 @@ Plug 'vim-airline/vim-airline-themes'
 
 Plug 'tpope/vim-surround' 
 Plug 'tpope/vim-fugitive'
-Plug 'preservim/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'ryanoasis/vim-devicons'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'moll/vim-bbye'
 
 Plug 'lervag/vimtex'
 Plug 'vim-syntastic/syntastic'
@@ -111,6 +108,10 @@ Plug 'preservim/tagbar'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdcommenter'
+Plug 'preservim/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'ryanoasis/vim-devicons'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 call plug#end() " Enables filetype identification and syntax
 
