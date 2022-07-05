@@ -146,7 +146,8 @@ let g:coc_global_extensions = [
     \'coc-pyright',
     \'coc-html',
     \'coc-css',
-    \'coc-tsserver'
+    \'coc-tsserver',
+    \'coc-sh'
     \]
 
 set updatetime=300 " Faster updatetime for better coc-UX
