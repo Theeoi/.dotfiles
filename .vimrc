@@ -9,7 +9,7 @@ set nowrap " Disable textwrapping by default
 set textwidth=80
 set guifont=mononoki\ Nerd\ Font\ Mono\ 12
 set encoding=utf8
-set spell
+set spell spelllang=en_us,sv
 set title
 set list
 set listchars=tab:▸\ ,trail:·,multispace:·
