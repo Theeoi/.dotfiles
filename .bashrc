@@ -151,8 +151,8 @@ ex ()
   fi
 }
 
-## Vim as default editor
-export EDITOR=vim
+## nvim as default editor
+export EDITOR=nvim
 set -o vi #Vim commands in CL
 
 ## Improved folder movement
