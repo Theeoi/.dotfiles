@@ -1,18 +1,29 @@
 # My dotfiles and other useful scripts!
 
-## Dotfiles
+## Configs
 
-The three dotfiles are easily implemented by creating a symlink from the $HOME directory.
+A collection of my custom configfiles and some useful scripts.
+Currently there are configs for:
+- Git
+- Bash
+- Vim
+- Nvim (with AstroNvim as base-config)
 
-Example:
+### Setup 
+
+Implement the configs by cloning this repo and cd into it:
+
 ```
-ln -s .dotfiles/.bashrc
+git clone https://github.com/Theeoi/.dotfiles.git
+cd .dotfiles
 ```
 
-The .vimrc will implement itself and install all plugins as you start vim.
-The .bashrc is easily implemented through:
+Then create hard links from the home directory to your $HOME in the same
+structure as in the repo.
+This process is automated using the setup.sh script:
+
 ```
-source .bashrc
+./setup.sh
 ```
 
 ## Scripts
