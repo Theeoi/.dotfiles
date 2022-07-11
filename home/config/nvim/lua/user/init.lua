@@ -30,7 +30,7 @@ local config = {
       mapleader = " ", -- sets vim.g.mapleader
       vimtex_view_general_viewer = "evince",
       vimtex_syntax_enabled = 0, -- Tree-sitter controlls syntax highlighting
-      vimtex_quickfix_enabled = 0, -- Disable :copen on compile
+      vimtex_quickfix_enabled = 0, -- Disable quickfix on compile
     },
   },
 
