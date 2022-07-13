@@ -159,6 +159,7 @@ local config = {
           },
           ["g"] = {
             ["C"] = { ":G commit<CR>", "Commit!" },
+            ["P"] = { ":G push<CR>", "Push!" },
           },
         },
         ["c"] = { name = "Change",
