@@ -160,6 +160,9 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 
+## Automatically activate environments in specific directories
+eval "$(direnv hook bash)"
+
 ## An implementation of a wastebasket for the rm command.
 # Taken from: https://github.com/beala/irm/blob/master/irm.sh
 TRASH="$HOME/.local/share/Trash/files"  #The trashcan directory within your home directory
