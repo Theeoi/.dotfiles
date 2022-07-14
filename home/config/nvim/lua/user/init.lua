@@ -108,7 +108,7 @@ local config = {
           local dap, dapui = require("dap"), require("dapui")
           dapui.setup()
 
-          -- Automatic toggle (not really working)
+          -- Automatic toggle (not working for manual close)
           dap.listeners.after.event_initialized["dapui_config"] = function()
             dapui.open()
           end
@@ -190,12 +190,14 @@ local config = {
           ["b"] = { name = "Debugging",
             ["t"] = { "<Cmd>lua require('dapui').toggle()<CR>", "Toggle DAP UI" },
             ["b"] = { "<Cmd>lua require('dap').toggle_breakpoint()<CR>", "Toggle breakpoint" },
-          }
+            ["c"] = { "<Cmd>lua require('dap').clear_breakpoints()<CR>", "Clear breakpoints" },
+          },
         },
+        ["<F4>"] = { "<Cmd>lua require('dap').terminate()<CR>", "Debug stop" },
         ["<F5>"] = { "<Cmd>lua require('dap').continue()<CR>", "Debug continue" },
         ["<F6>"] = { "<Cmd>lua require('dap').step_over()<CR>", "Debug step over" },
         ["<F7>"] = { "<Cmd>lua require('dap').step_into()<CR>", "Debug step into" },
-        ["<F8>"] = { "<Cmd>lua require('dap').close()<CR>", "Debug stop" },
+        ["<F8>"] = { "<Cmd>lua require('dap').terminate()<CR>", "Debug step out" },
         ["c"] = { name = "Change",
           ["s"] = { name = "VimTeX Surrounding" },
         },
