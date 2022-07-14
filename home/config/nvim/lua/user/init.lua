@@ -94,6 +94,32 @@ local config = {
       {"peterbjorgensen/sved"},
       {"tpope/vim-surround"},
       {"tpope/vim-fugitive"},
+      {"mfussenegger/nvim-dap"},
+      {"mfussenegger/nvim-dap-python",
+        requires = {'mfussenegger/nvim-dap'},
+        config = function()
+          require('dap-python').setup('~/.virtualenvs/debugpy/bin/python') -- install debugpy in this virtualenv
+          require('dap-python').test_runner = 'pytest'
+        end,
+      },
+      {"rcarriga/nvim-dap-ui",
+        requires = {'mfussenegger/nvim-dap'},
+        config = function()
+          local dap, dapui = require("dap"), require("dapui")
+          dapui.setup()
+
+          -- Automatic toggle (not really working)
+          dap.listeners.after.event_initialized["dapui_config"] = function()
+            dapui.open()
+          end
+          dap.listeners.before.event_terminated["dapui_config"] = function()
+            dapui.close()
+          end
+          dap.listeners.before.event_exited["dapui_config"] = function()
+            dapui.close()
+          end
+        end
+      }
     },
     -- All other entries override the setup() call for default plugins
     ["null-ls"] = function(config)
@@ -161,7 +187,15 @@ local config = {
             ["C"] = { ":G commit<CR>", "Commit!" },
             ["P"] = { ":G push<CR>", "Push!" },
           },
+          ["b"] = { name = "Debugging",
+            ["t"] = { "<Cmd>lua require('dapui').toggle()<CR>", "Toggle DAP UI" },
+            ["b"] = { "<Cmd>lua require('dap').toggle_breakpoint()<CR>", "Toggle breakpoint" },
+          }
         },
+        ["<F5>"] = { "<Cmd>lua require('dap').continue()<CR>", "Debug continue" },
+        ["<F6>"] = { "<Cmd>lua require('dap').step_over()<CR>", "Debug step over" },
+        ["<F7>"] = { "<Cmd>lua require('dap').step_into()<CR>", "Debug step into" },
+        ["<F8>"] = { "<Cmd>lua require('dap').close()<CR>", "Debug stop" },
         ["c"] = { name = "Change",
           ["s"] = { name = "VimTeX Surrounding" },
         },
