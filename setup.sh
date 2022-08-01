@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Create hard links
-ln ./home/bashrc ~/.bashrc
-ln ./home/vimrc ~/.vimrc
-ln ./home/gitconfig ~/.gitconfig
-ln ./home/config/nvim/lua/user/init.lua ~/.config/nvim/lua/user/init.lua
+ln -s ./home/bashrc ~/.bashrc
+ln -s ./home/vimrc ~/.vimrc
+ln -s ./home/gitconfig ~/.gitconfig
+ln -s ./home/config/nvim/lua/user/init.lua ~/.config/nvim/lua/user/init.lua
