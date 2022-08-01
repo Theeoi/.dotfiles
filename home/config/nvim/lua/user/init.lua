@@ -25,6 +25,7 @@ local config = {
     opt = {
       relativenumber = true, -- sets vim.opt.relativenumber
       textwidth = 80,
+      spell = true,
     },
     g = {
       mapleader = " ", -- sets vim.g.mapleader
@@ -94,6 +95,7 @@ local config = {
       {"peterbjorgensen/sved"},
       {"tpope/vim-surround"},
       {"tpope/vim-fugitive"},
+      {"kdheepak/lazygit.nvim"},
       {"mfussenegger/nvim-dap"},
       {"mfussenegger/nvim-dap-python",
         requires = {'mfussenegger/nvim-dap'},
