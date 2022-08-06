@@ -132,8 +132,10 @@ local config = {
       config.sources = {
         -- Set a formatter
         null_ls.builtins.formatting.rufo,
+        null_ls.builtins.formatting.autopep8,
         -- Set a linter
         null_ls.builtins.diagnostics.rubocop,
+        null_ls.builtins.diagnostics.pylint,
       }
       -- set up null-ls's on_attach function
       config.on_attach = function(client)
