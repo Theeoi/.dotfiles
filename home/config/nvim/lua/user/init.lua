@@ -95,6 +95,7 @@ local config = {
       --     require("lsp_signature").setup()
       --   end,
       -- },
+      {"ThePrimeagen/vim-be-good"},
       {"lervag/vimtex"},
       {"peterbjorgensen/sved"},
       {"tpope/vim-surround"},
