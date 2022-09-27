@@ -141,7 +141,6 @@ local config = {
         -- Set a linter
         null_ls.builtins.diagnostics.pylint,
         null_ls.builtins.diagnostics.mypy,
-        null_ls.builtins.diagnostics.chktex,
       }
       -- set up null-ls's on_attach function
       config.on_attach = function(client)
