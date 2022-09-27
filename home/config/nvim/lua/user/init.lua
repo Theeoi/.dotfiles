@@ -136,11 +136,12 @@ local config = {
       -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
       config.sources = {
         -- Set a formatter
-        null_ls.builtins.formatting.rufo,
         null_ls.builtins.formatting.autopep8,
+        null_ls.builtins.formatting.latexindent,
         -- Set a linter
-        null_ls.builtins.diagnostics.rubocop,
         null_ls.builtins.diagnostics.pylint,
+        null_ls.builtins.diagnostics.mypy,
+        null_ls.builtins.diagnostics.chktex,
       }
       -- set up null-ls's on_attach function
       config.on_attach = function(client)
