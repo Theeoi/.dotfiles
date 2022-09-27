@@ -163,6 +163,10 @@ ex ()
   fi
 }
 
+# DOOMEmacs Support
+export PATH="$HOME/.emacs.d/bin:$PATH"
+alias emacs="emacsclient -c -a 'emacs'"
+
 ## nvim as default editor
 export EDITOR=nvim
 set -o vi #Vim commands in CL

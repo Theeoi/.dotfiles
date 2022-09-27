@@ -157,7 +157,7 @@ local config = {
       return config -- return final config table
     end,
     treesitter = {
-      ensure_installed = { "lua" },
+      ensure_installed = { "lua", "latex", "python" },
     },
     ["nvim-lsp-installer"] = {
       ensure_installed = { "sumneko_lua" },
