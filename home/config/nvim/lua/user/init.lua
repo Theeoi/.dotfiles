@@ -24,7 +24,7 @@ local config = {
   options = {
     opt = {
       relativenumber = true, -- sets vim.opt.relativenumber
-      textwidth = 80,
+      textwidth = 79,
       spell = true,
     },
     g = {
