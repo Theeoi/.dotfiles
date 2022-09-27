@@ -137,7 +137,6 @@ local config = {
       config.sources = {
         -- Set a formatter
         null_ls.builtins.formatting.autopep8,
-        null_ls.builtins.formatting.latexindent,
         -- Set a linter
         null_ls.builtins.diagnostics.pylint,
         null_ls.builtins.diagnostics.mypy,
