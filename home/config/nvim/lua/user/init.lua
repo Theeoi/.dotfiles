@@ -33,6 +33,10 @@ local config = {
       vimtex_syntax_enabled = 0, -- Tree-sitter controlls syntax highlighting
       vimtex_quickfix_enabled = 0, -- Disable quickfix on compile
     },
+    o = {
+      foldmethod = "expr",
+      foldexpr = "nvim_treesitter#foldexpr()",
+    },
   },
 
   -- Default theme configuration
